@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"   crossorigin="anonymous"/>
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <h2 class="logo">STUDENTS CONNECT</h2>
+            <i id="bars" class="fas fa-bars bars"></i>
+            <div class="nav-menu">
+                <a href="#" class = "nav-link"> <i class="fas fa-home"></i> <span>Home</span> </a>
+                <a href="#" class = "nav-link"> <i class="fas fa-address-card"></i> <span>About</span> </a>
+                <a href="#"class = "nav-link"> <i class="far fa-chart-network"></i> <span>Activities</span> </a>
+                <a href="#" class= "nav-link"> <i class="fas fa-address-book"></i>  <span>Contact</span> </a>
+            </div>
+        </div>
+    </header>
+
+    <div id="mobileMenu" class="mobile-menu">
+        <a href="#" class = "nav-link">Home</a>
+        <a href="#" class = "nav-link">About</a>
+        <a href="#" class = "nav-link">Activities</a>
+        <a href="#" class = "nav-link">Contact</a>
+
+    </div>
+      
+    <script>
+        const bars = document.getElementById('bars');
+        const mobileMenu = document.getElementById('mobileMenu');
+        bars.addEventListener('click', function(){
+            mobileMenu.classList.toggle('active');
+        })
+    </script>
+</body>
+</html>
