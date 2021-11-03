@@ -1,4 +1,8 @@
 @font-face {
+  font-family: "icon";
+  src: url("../fonts/DancingScript-VariableFont_wght.ttf");
+}
+@font-face {
   font-family: "olly";
   src: url("../fonts/Poppins-Regular.ttf");
 }
@@ -20,8 +24,8 @@ body {
 header {
   position: relative;
   z-index: 2;
-  background-color: #383839;
-  color: #FBEAFF;
+  background-color: #18191A;
+  color: #A7C2E6;
   text-transform: uppercase;
 }
 
@@ -37,6 +41,8 @@ header {
 .logo {
   color: #fff;
   cursor: default;
+  font-family: "icon";
+  font-size: 3rem;
 }
 
 .bars {
@@ -69,7 +75,7 @@ header {
   width: 100%;
   height: 100%;
   z-index: 1;
-  background-color: #C975D3;
+  background-color: #18191A;
   opacity: 0;
   display: flex;
   flex-direction: column;
@@ -98,6 +104,7 @@ span {
 .hero {
   width: 100%;
   height: 100vh;
+  background: url("../images/tt.jpg") center no-repeat;
   background-size: cover;
   background-position: center;
   display: flex;
@@ -106,18 +113,6 @@ span {
   text-align: center;
   position: relative;
   z-index: 0;
-}
-
-.hero::before {
-  content: "";
-  background-image: url("../images/bg.jpeg");
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
 }
 
 .container {
@@ -129,18 +124,26 @@ span {
 
 h2 {
   position: relative;
-  color: white;
-  font-size: 9rem;
+  color: #E8EFFF;
+  font-size: 7rem;
   line-height: 1.3;
   text-align: center;
   z-index: 2222;
 }
 
-h2 .nice {
+.nice {
+  color: #894D57;
+}
+
+.nav-menu i {
   color: #894D57;
 }
 
 @media screen and (max-width: 768px) {
+  .logo {
+    font-size: 1.6rem;
+  }
+
   .bars {
     display: block;
   }
